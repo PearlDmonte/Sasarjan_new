@@ -13,6 +13,7 @@ const navLinks = [
     { name: 'Philosophy', href: '/#philosophy' },
     { name: 'Initiatives', href: '/#initiatives' },
     { name: 'Impact', href: '#' },
+    { name: 'Connect', href: '/contact' },
     { name: 'Join', href: '/login' },
 ];
 
