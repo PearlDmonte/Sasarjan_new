@@ -35,6 +35,14 @@ const initiatives: Initiative[] = [
         status: 'Coming Soon',
     },
     {
+        title: 'Wealth Creation Manifesto',
+        subtitle: 'Featured Resource',
+        description: 'A blueprint for collective prosperity and co-creation.',
+        icon: '📘',
+        status: 'Live',
+        link: '/initiatives/wealth-creation-manifesto'
+    },
+    {
         title: 'BookBazaar.com',
         subtitle: 'Book Marketing Platform',
         description: 'Discover, promote, and connect authors with readers through community-driven book marketing',

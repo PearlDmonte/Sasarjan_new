@@ -12,6 +12,7 @@ const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Philosophy', href: '/#philosophy' },
     { name: 'Initiatives', href: '/#initiatives' },
+    { name: 'Resources', href: '/initiatives/wealth-creation-manifesto' },
     { name: 'Impact', href: '#' },
     { name: 'Connect', href: '/contact' },
     { name: 'Join', href: '/login' },

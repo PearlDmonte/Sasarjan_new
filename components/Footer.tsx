@@ -18,6 +18,7 @@ const footerLinks = {
         { name: 'Programs', href: '#' },
         { name: 'Events', href: '#' },
         { name: 'Stories', href: '#' },
+        { name: 'Wealth Creation Manifesto', href: '/initiatives/wealth-creation-manifesto' },
     ],
     legal: [
         { name: 'Privacy', href: '#' },
