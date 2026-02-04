@@ -12,7 +12,7 @@ const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Philosophy', href: '/#philosophy' },
     { name: 'Initiatives', href: '/#initiatives' },
-    { name: 'Resources', href: '/initiatives/wealth-creation-manifesto' },
+    { name: 'Resources', href: '/initiatives/collective-path-of-humanity' },
     { name: 'Impact', href: '#' },
     { name: 'Connect', href: '/contact' },
     { name: 'Join', href: '/login' },

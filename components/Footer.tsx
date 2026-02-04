@@ -18,7 +18,7 @@ const footerLinks = {
         { name: 'Programs', href: '#' },
         { name: 'Events', href: '#' },
         { name: 'Stories', href: '#' },
-        { name: 'Wealth Creation Manifesto', href: '/initiatives/wealth-creation-manifesto' },
+        { name: 'The Collective Path of Humanity', href: '/initiatives/collective-path-of-humanity' },
     ],
     legal: [
         { name: 'Privacy', href: '#' },

@@ -35,12 +35,12 @@ const initiatives: Initiative[] = [
         status: 'Coming Soon',
     },
     {
-        title: 'Wealth Creation Manifesto',
+        title: 'The Collective Path of Humanity',
         subtitle: 'Featured Resource',
         description: 'A blueprint for collective prosperity and co-creation.',
         icon: '📘',
         status: 'Live',
-        link: '/initiatives/wealth-creation-manifesto'
+        link: '/initiatives/collective-path-of-humanity'
     },
     {
         title: 'BookBazaar.com',

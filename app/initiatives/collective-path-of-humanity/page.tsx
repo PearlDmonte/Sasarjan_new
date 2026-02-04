@@ -7,7 +7,7 @@ import { Playfair_Display, Inter } from 'next/font/google';
 const playfair = Playfair_Display({ subsets: ['latin'] });
 const inter = Inter({ subsets: ['latin'] });
 
-export default function WealthCreationManifesto() {
+export default function CollectivePathOfHumanity() {
     return (
         <main className={`min-h-screen bg-[#FAFBFC] pt-24 ${inter.className}`}>
 
