@@ -22,7 +22,7 @@ export default function CollectivePathOfHumanity() {
                             {/* Book Cover */}
                             <div className="max-w-[220px] mx-auto aspect-[2/3] relative rounded-xl overflow-hidden shadow-lg bg-gray-200 group">
                                 <Image
-                                    src="/images/book-cover.jpeg"
+                                    src="/images/book-cover.jpg"
                                     alt="Solving the Unsolved Book Cover"
                                     fill
                                     className="object-cover"

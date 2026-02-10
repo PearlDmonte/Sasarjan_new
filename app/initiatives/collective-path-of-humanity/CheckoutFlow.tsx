@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { Inter, Playfair_Display } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -14,6 +15,12 @@ export default function CheckoutFlow() {
     const [emails, setEmails] = useState<string[]>(['']);
     const [isProcessing, setIsProcessing] = useState(false);
     const [errors, setErrors] = useState<string[]>([]);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+        return () => setMounted(false);
+    }, []);
 
     const PRICE_PER_UNIT = 399;
 
@@ -106,8 +113,9 @@ export default function CheckoutFlow() {
         );
     }
 
-    return (
-        <div className={`fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm ${inter.className}`}>
+    // Modal Content
+    const modalContent = (
+        <div className={`fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm ${inter.className}`}>
             <div className="bg-white rounded-2xl shadow-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto relative animate-fadeIn">
 
                 {/* Close Button (only allowed if not processing/success) */}
@@ -244,4 +252,8 @@ export default function CheckoutFlow() {
             </div>
         </div>
     );
+
+    if (!mounted) return null;
+
+    return createPortal(modalContent, document.body);
 }

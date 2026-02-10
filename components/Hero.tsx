@@ -25,7 +25,6 @@ const Hero = () => {
           fill
           priority
           className="object-cover object-bottom"
-          quality={100}
         />
         {/* Gradient Overlay for Smooth Transition (Reduced for Vibrancy) */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#FAFBFC] via-transparent to-transparent opacity-90" />
