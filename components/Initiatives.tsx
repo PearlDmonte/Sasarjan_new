@@ -3,20 +3,10 @@
 import React from 'react';
 import { Playfair_Display, Inter } from 'next/font/google';
 import Link from 'next/link';
-import { initiatives, Status } from '@/lib/initiativesData';
+import { initiatives } from '@/lib/initiativesData';
 
 const playfair = Playfair_Display({ subsets: ['latin'] });
 const inter = Inter({ subsets: ['latin'] });
-
-const getStatusColor = (status: Status) => {
-    switch (status) {
-        case 'Live': return 'bg-[#E6FFFA] text-[#1A4D6F] border border-[#1A4D6F]/20';
-        case 'In Development': return 'bg-[#EBF8FF] text-[#2B6CB0] border border-[#2B6CB0]/20';
-        case 'Coming Soon': return 'bg-[#FFFFF0] text-[#B7791F] border border-[#B7791F]/20';
-        case 'Planning': return 'bg-[#F7FAFC] text-[#4A5568] border border-[#4A5568]/20';
-        default: return 'bg-gray-100 text-gray-800';
-    }
-};
 
 const Initiatives = () => {
     return (
@@ -68,18 +58,6 @@ const Initiatives = () => {
                                         {item.description}
                                     </p>
 
-                                    <div className="flex items-center justify-between mt-auto pointer-events-auto">
-                                        <span className={`px-3 py-1 rounded-full text-xs font-semibold tracking-wide ${getStatusColor(item.status)}`}>
-                                            {item.status}
-                                        </span>
-
-                                        <Link href={href} className="flex items-center text-[#1A4D6F] hover:text-[#0f2d42] font-medium text-sm transition-colors group/link z-20">
-                                            {(item.status === 'Coming Soon' || item.status === 'Planning') && !item.externalLink && !item.isInternalPage ? 'Details' : 'Visit'}
-                                            <svg className="w-4 h-4 ml-1 transform group-hover/link:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                            </svg>
-                                        </Link>
-                                    </div>
                                 </div>
                             </div>
                         )
