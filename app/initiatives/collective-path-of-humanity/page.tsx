@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Playfair_Display, Inter } from 'next/font/google';
 import CheckoutFlow from './CheckoutFlow';
+import BookInterestForm from '@/components/BookInterestForm';
 
 const playfair = Playfair_Display({ subsets: ['latin'] });
 const inter = Inter({ subsets: ['latin'] });
@@ -99,6 +100,20 @@ export default function CollectivePathOfHumanity() {
                                     </li>
                                 ))}
                             </ul>
+                        </section>
+
+                        {/* Express Your Interest - New Section */}
+                        <section className="bg-gradient-to-br from-[#1A4D6F] to-[#2C5F85] rounded-2xl p-8 md:p-12 shadow-lg text-white">
+                            <div className="text-center mb-8">
+                                <h2 className={`text-2xl md:text-3xl font-bold mb-4 ${playfair.className}`}>
+                                    Express Your Interest
+                                </h2>
+                                <p className="text-white/80 max-w-2xl mx-auto">
+                                    Join the waiting list to be notified when the book is available.
+                                    By registering, you'll get exclusive updates and early access opportunities.
+                                </p>
+                            </div>
+                            <BookInterestForm />
                         </section>
 
                         {/* Know Your Authors - New Section */}
